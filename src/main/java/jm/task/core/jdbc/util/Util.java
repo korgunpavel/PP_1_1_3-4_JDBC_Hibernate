@@ -28,7 +28,7 @@ public class Util {
         return connection;
     }
 
-    public static SessionFactory getConfiguration() {
+    public static SessionFactory getSessionFactory() {
         return new Configuration()
                 .addAnnotatedClass(User.class)
                 .setProperty("connection.driver_class", DRIVER)
